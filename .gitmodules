@@ -1,7 +1,8 @@
 [submodule "dibs-backend"]
 	path = dibs-backend
 	url = https://github.com/DawtDawt/dibs-backend
-	branch = deploy
+	branch = https
 [submodule "dibs-frontend"]
 	path = dibs-frontend
 	url = https://github.com/yehmond/dibs-frontend
+	branch = develop

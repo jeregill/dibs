@@ -1,8 +1,16 @@
 # Dibs
 
-Dibs is a reservation application targeted for barbsershops/salons. The platform enables registration as a customer or as an owner;
-owners are able to reigster shops and babers, where customers are then able to make reservations. Dibs provides owners the ability
+Dibs is a reservation application targeted for barbershops/salons. The platform enables registration as a customer or as an owner;
+owners are able to register shops and barbers, where customers are then able to make reservations. Dibs provides owners the ability
 to visualize their schedules throughout the day as well as showcase their barbershop to potential customers.
+
+## Deployment
+
+To bring in all changes, run `git submodule update --remote`. 
+
+Then, commit and push to the git repository via `git commit -am "message" && git push`.
+
+To deploy run `git push heroku master`. Due to using git submodules, Heroku pipelines do not work as intended.
 
 
 ## Project Description

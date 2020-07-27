@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Dibs build configuration",
   "scripts": {
-	"prestart": "cd dibs-frontend && npm install && npm run build --production && cd ../dibs-backend && npm install",
+	"heroku-prebuild": "cd dibs-frontend && npm install && npm run build --production && cd ../dibs-backend && npm install",
     "start": "cd dibs-backend && npm start"
   },
   "repository": {
