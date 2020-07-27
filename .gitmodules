@@ -5,4 +5,4 @@
 [submodule "dibs-frontend"]
 	path = dibs-frontend
 	url = https://github.com/yehmond/dibs-frontend
-	branch = develop
+	branch = https
