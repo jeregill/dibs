@@ -4,6 +4,10 @@ Dibs is a reservation application targeted for barbershops/salons. The platform 
 owners are able to register shops and barbers, where customers are then able to make reservations. Dibs provides owners the ability
 to visualize their schedules throughout the day as well as showcase their barbershop to potential customers.
 
+[Backend Repo](https://github.com/DawtDawt/dibs-backend)
+
+[Frontend Repo](https://github.com/yehmond/dibs-frontend)
+
 ## Deployment
 
 To bring in all changes, run `git submodule update --remote`. 
