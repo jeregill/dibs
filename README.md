@@ -1,5 +1,7 @@
 # Dibs
 
+[App](https://dibs-vancouver.herokuapp.com/)
+
 [Backend Repo](https://github.com/DawtDawt/dibs-backend)
 
 [Frontend Repo](https://github.com/yehmond/dibs-frontend)
