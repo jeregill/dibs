@@ -5,9 +5,11 @@
 [Frontend Repo](https://github.com/yehmond/dibs-frontend)
 
 Dibs is an online barbershop-reservation service which supports barber service booking and barbershop information management.
-Dibs enables both owners and customers to register on the platforms. Owners are able to advertise their shops, services, and individual barbers, as well as
-visualize daily schedules and past booking statistics, while customers are able to book appointments and leave reviews for their 
-favorite barbershops. Dibs is an all-in-one platform for barbershop customers and owners to manage their personal care needs.
+Dibs enables both owners and customers to register on the platform. Owners are able to advertise all aspects of their shops,
+including hours, location, services, and barbers, as well as
+visualize daily schedules and past booking statistics. Customers are provided with an extremely convenient searching
+and booking system, and can also leave reviews for their 
+favorite barbershops. Dibs is an all-in-one platform for both barbershop customers and owners to manage their personal care needs.
 
 
 ## Goals Overview
@@ -29,7 +31,7 @@ favorite barbershops. Dibs is an all-in-one platform for barbershop customers an
 ##### 2-3 stretch requirements
 
 -   A rating system for the barbershops/barbers that users can participate in  ✅
--   A map containing all of the barbershops available on the site ⚠
+-   A map containing each barbershops available on the site ⚠
  - A schedule that displays the barbershop's availability with filters for individual barbers.  ✅
 
 ## Tech Overview
@@ -51,23 +53,23 @@ MongoDB and NoSQL was used to persist our data. Although a Relational model woul
 we were able to utilize MongoDB indexes to allow us to have separate collections while maintaining speed in our queries. Our collections 
 consisted of: Users, Barbershops, Barbers, Reviews, and Reservations. 
 ##### Unit 4 - Backend/Express
-In the backend, we used a series of middleware such as bcrypt, dotenv and JWT tokens to keep our information confidential and secure, 
+In the backend, we used a series of middleware such as bcrypt, dotenv and JWT tokens to keep our information confidential and secure. 
 Mongoose was used as a data model to enable seamless communication between the backend and the database. Body-parser with Express
 allowed us to easily facilitate the connection between the frontend and the backend.
 ##### Unit 5 - Release Engineering
 The app was deployed via Heroku, using a submodule structure. The backend and frontend were developed in separate repositories, with 
 a parent repository using git submodules to connect the client and server in deployment. Heroku prebuild scripts allowed us to build 
-the frontend statically and serve them via the backend server. Continuous deployment was enabled via Heroku pipelines, where
+the frontend statically and serve it via the backend server. Continuous deployment was enabled via Heroku pipelines, where
 pushes to our master branch would trigger a new build. Environment variables were used to store secure information, such as JWT secret and 
 API keys.
 
 ## Above and Beyond Functionality
 Dibs goes above and beyond in several aspects. Firstly, the app is fully mobile responsive for both desktop and 
-mobile views. This was achieved via CSS media queries and strategic use of SCSS inheritance to 
-enable class selectors and ID selectors to worth together to change styling for mobile views.
-Secondly, our app is integrated with different external APIs, including node Geocoder, where addresses are 
-translate into lat/lon coordinates, where our Google Maps API is then able to render a mini-map.
-
+mobile views. This was achieved via CSS media queries and strategic use of SCSS inheritance with 
+class selectors and ID selectors to change styling for mobile views.
+Moreover, our app is integrated with different external APIs, including node Geocoder, where addresses are 
+translate into lat/lon coordinates. Consequently, we have connected with the Google Maps API, using these coordinates 
+to render shop locations on a mini-map.
 
 In addition, our user authentication utilizes best practices, avoiding local storage to store tokens, but
 instead using httpOnly cookies for maximum security. 
@@ -78,14 +80,17 @@ structured on asynchronous code (async/await and promises) whenever necessary to
 Lastly, the depth of the Dibs application is a critical part of what sets it apart. The app is optimized to deliver a 
 custom experience for both owners and customers, and offers a wide range of functionalities for both parties. Not only is
 it a reservation system, it is also a management system for owners, offering scheduling visualization, statistics, and 
-advertising. 
+advertising. While a functioning reservation system alone would have been an achievement, we wanted to go further with 
+Dibs and make it an all-in-one experience for owners and customers alike, and ultimately, these features lift Dibs from a 
+good platform to a great platform.
 
 ## Next Steps
-In the next steps, our app is looking forward to supporting multiple languages for non-English users. In the meanwhile, we are also looking to integrate with social media, 
+In the next steps, our app is looking forward to supporting multiple languages for non-English users. 
+Meanwhile, we are also looking to integrate with social media, 
 such as Facebook and Twitter, to allow users to log in with social media accounts and receive barbershop updates.
 
 In addition, for a future release, we would like to implement clear error messaging for all potential errors,
-enhance the statistics available to show barber owners, enhanced rating/recommendation system, as well as enable support for 
+enhance the statistics available to show barber owners, enhance the rating/recommendation system, and enable support for 
 editing existing store/barber information.
 
 ## List of Contributions
@@ -103,7 +108,7 @@ editing existing store/barber information.
 - Created the registration pages for barbershops and barbers
 - Created the Barbershop Profile pages as well as Schedule View for owners,
 and the statistics for owners. 
-- Set Material UI Theme and SCSS in the project
+- Set up Material UI Theme and SCSS in the project
 
 
 ##### TJ 
