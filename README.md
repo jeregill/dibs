@@ -13,6 +13,8 @@ visualize daily schedules and past booking statistics. Customers are provided wi
 and booking system, and can also leave reviews for their 
 favorite barbershops. Dibs is an all-in-one platform for both barbershop customers and owners to manage their personal care needs.
 
+*For Graders: Please message one of the team members on Slack if you would like credentials for a pre-populated user*
+
 
 ## Goals Overview
 
